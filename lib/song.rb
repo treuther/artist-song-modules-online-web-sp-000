@@ -18,6 +18,8 @@ class Song
     @@songs
   end
 
+  extend Memorable::ClassMethods
+
   # def self.reset_all
   #   self.all.clear
   # end
