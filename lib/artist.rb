@@ -13,6 +13,7 @@ class Artist
   #   @@artists << self
   #   @songs = []
   # end
+  
   def initialize
     super
     @songs = []
@@ -22,9 +23,9 @@ class Artist
     @@artists.detect{|a| a.name == name}
   end
 
-  # def self.all
-  #   @@artists
-  # end
+  def self.all
+    @@artists
+  end
 
   # extend Memorable::ClassMethods
 
