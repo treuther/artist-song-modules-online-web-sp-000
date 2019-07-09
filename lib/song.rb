@@ -8,6 +8,8 @@ class Song
   attr_accessor :name
   attr_reader :artist
 
+  extend Findable
+
   @@songs = []
 
   # def initialize
